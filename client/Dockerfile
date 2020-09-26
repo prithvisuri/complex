@@ -1,6 +1,6 @@
 FROM node:alpine
 WORKDIR /app
-COPY ./package ./
+COPY ./package.json ./
 RUN npm install
 COPY ./ ./
 CMD [ "npm", "run", "build" ]
